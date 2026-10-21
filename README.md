@@ -29,6 +29,11 @@ A brand-new column defaults to `false` for everyone, including me. The way in is
 update public.profiles set is_superadmin = true where email = 'sampadaaprakash@gmail.com';
 ```
 
+**Who is a superadmin:** our team decided every **@columbia.edu** account is one
+(`20261021010000_columbia_superadmins.sql`). Existing Columbia accounts were flagged once, and a trigger
+flags new ones on first sign-in. It checks the Google-verified sign-in email in `auth.users`, not the
+editable `profiles.email`, so nobody can fake it. Other accounts stay regular users and see "Access denied".
+
 A trigger (`guard_superadmin_flag`) rejects any change to `is_superadmin` that comes through the API,
 so a regular user can't promote themselves by editing their own profile row. Only the database owner can.
 
