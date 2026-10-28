@@ -8,6 +8,18 @@ const LINKS = [
   { href: "/users", label: "Users" },
   { href: "/media", label: "AI media" },
   { href: "/votes", label: "Votes" },
+  { href: "/images", label: "Images" },
+  { href: "/requests", label: "Requests" },
+  { href: "/responses", label: "LLM responses" },
+  { href: "/prompt-chains", label: "Chains" },
+  { href: "/prompt-chain-steps", label: "Chain steps" },
+  { href: "/prompt-chain-mix", label: "Chain mix" },
+  { href: "/examples", label: "Examples" },
+  { href: "/terms", label: "Terms" },
+  { href: "/llm-models", label: "Models" },
+  { href: "/llm-providers", label: "Providers" },
+  { href: "/signup-domains", label: "Domains" },
+  { href: "/whitelist", label: "Whitelist" },
 ];
 
 export default function NavLinks() {
