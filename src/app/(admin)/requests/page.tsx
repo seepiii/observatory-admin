@@ -22,7 +22,7 @@ export default async function RequestsPage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="text-left font-mono text-[11px] tracking-[0.15em] text-white/50 uppercase">
+              <tr className="text-left font-mono text-xs tracking-[0.15em] text-white/50 uppercase">
                 <th className="py-2 pr-4">When</th><th className="py-2 pr-4">Who</th><th className="py-2 pr-4">Type</th>
                 <th className="py-2 pr-4">Subject</th><th className="py-2 pr-4">Photo</th><th className="py-2 pr-4">Model</th><th className="py-2">Media</th>
               </tr>

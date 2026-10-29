@@ -61,7 +61,7 @@ export default async function VotesPage({ searchParams }: PageProps<"/votes">) {
         <div className="overflow-x-auto">
           <table className="w-full min-w-[640px] text-sm">
             <thead>
-              <tr className="border-b border-white/10 text-left font-mono text-[11px] tracking-[0.15em] text-white/50 uppercase">
+              <tr className="border-b border-white/10 text-left font-mono text-xs tracking-[0.15em] text-white/50 uppercase">
                 <th className="py-2 pr-3">When</th>
                 <th className="py-2 pr-3">Voter</th>
                 <th className="py-2 pr-3">Vote</th>

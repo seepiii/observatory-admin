@@ -28,7 +28,7 @@ export default async function UsersPage() {
       <div className="overflow-x-auto">
         <table className="w-full min-w-[720px] text-sm">
           <thead>
-            <tr className="border-b border-white/10 text-left font-mono text-[11px] tracking-[0.15em] text-white/50 uppercase">
+            <tr className="border-b border-white/10 text-left font-mono text-xs tracking-[0.15em] text-white/50 uppercase">
               <th className="py-2 pr-3">Crew member</th>
               <th className="py-2 pr-3">Joined</th>
               <th className="py-2 pr-3 text-right">Reports</th>
@@ -66,7 +66,7 @@ export default async function UsersPage() {
                 </td>
                 <td className="py-2.5">
                   {p.is_superadmin ? (
-                    <span className="rounded-full bg-[#7ee2a8]/15 px-2 py-0.5 font-mono text-[11px] tracking-[0.1em] text-[#7ee2a8] uppercase">Superadmin</span>
+                    <span className="rounded-full bg-[#7ee2a8]/15 px-2 py-0.5 font-mono text-xs tracking-[0.1em] text-[#7ee2a8] uppercase">Superadmin</span>
                   ) : (
                     <span className="font-mono text-xs text-white/40">Crew</span>
                   )}

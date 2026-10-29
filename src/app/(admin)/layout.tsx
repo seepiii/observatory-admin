@@ -6,10 +6,10 @@ import { signOut } from "../actions";
 export default async function AdminLayout({ children }: LayoutProps<"/">) {
   const { profile } = await requireAdmin();
   return (
-    <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-6 sm:px-8">
+    <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-6 sm:px-8">
       <header className="flex flex-col gap-4 border-b border-white/10 pb-5 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex flex-col gap-1">
-          <p className="font-mono text-[11px] tracking-[0.3em] text-[#7ee2a8] uppercase">● Superadmin · Earth Observatory</p>
+          <p className="font-mono text-xs tracking-[0.3em] text-[#7ee2a8] uppercase">● Superadmin · Earth Observatory</p>
           <h1 className="text-2xl font-bold text-white">Observatory Admin</h1>
         </div>
         <div className="flex items-center gap-3">

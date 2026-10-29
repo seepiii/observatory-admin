@@ -29,7 +29,7 @@ export default async function ResourceList({ params, searchParams }: PageProps<"
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="text-left font-mono text-[11px] tracking-[0.15em] text-white/50 uppercase">
+              <tr className="text-left font-mono text-xs tracking-[0.15em] text-white/50 uppercase">
                 {columns.map((c) => <th key={c.name} className="py-2 pr-4">{c.label}</th>)}
                 {resource.extraColumns?.map((c) => <th key={c.name} className="py-2 pr-4">{c.label}</th>)}
                 {editable && <th />}

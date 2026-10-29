@@ -14,7 +14,7 @@ function Tip({ children }: { children: React.ReactNode }) {
 export function StatTile({ label, value, sub }: { label: string; value: string; sub?: string }) {
   return (
     <div className="hud-panel flex flex-col gap-1 p-4">
-      <span className="font-mono text-[11px] tracking-[0.2em] text-white/50 uppercase">{label}</span>
+      <span className="font-mono text-xs tracking-[0.2em] text-white/50 uppercase">{label}</span>
       <span className="text-3xl font-bold text-white tabular-nums">{value}</span>
       {sub && <span className="font-mono text-xs text-white/45">{sub}</span>}
     </div>
@@ -44,7 +44,7 @@ export function ColumnChart({ data, unit }: { data: { label: string; short: stri
           </div>
         ))}
       </div>
-      <div className="flex justify-between font-mono text-[11px] text-white/45">
+      <div className="flex justify-between font-mono text-xs text-white/45">
         <span>{data[0]?.short}</span>
         <span>{data[Math.floor(data.length / 2)]?.short}</span>
         <span>{data.at(-1)?.short}</span>
@@ -73,7 +73,7 @@ export function HourStrip({ hours, labelOf }: { hours: number[]; labelOf: (h: nu
           </div>
         ))}
       </div>
-      <div className="hidden justify-between font-mono text-[11px] text-white/45 sm:flex">
+      <div className="hidden justify-between font-mono text-xs text-white/45 sm:flex">
         <span>12am</span><span>6am</span><span>12pm</span><span>6pm</span><span>11pm</span>
       </div>
     </div>

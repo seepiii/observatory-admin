@@ -51,7 +51,7 @@ export default async function OverviewPage() {
           </ol>
           {s.controversial && (
             <div className="mt-auto border-t border-white/10 pt-3">
-              <p className="font-mono text-[11px] tracking-[0.2em] text-[#e98a6a] uppercase">Most divisive</p>
+              <p className="font-mono text-xs tracking-[0.2em] text-[#e98a6a] uppercase">Most divisive</p>
               <Link href={`/media/${s.controversial.id}`} className="text-sm text-white hover:underline">{s.controversial.subject}</Link>
               <p className="font-mono text-xs text-white/50">{s.controversial.up}▲ vs {s.controversial.down}▼ — the crew can&apos;t agree</p>
             </div>

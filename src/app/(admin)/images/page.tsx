@@ -57,7 +57,7 @@ export default async function ImagesPage({ searchParams }: PageProps<"/images">)
               <li key={img.path} className={`flex flex-col gap-2 rounded-lg border bg-black/30 p-3 ${highlighted === img.path ? "border-[#e9c46a]" : "border-white/10"}`}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={`${bucket.getPublicUrl(img.path).data.publicUrl}?v=${encodeURIComponent(img.updated ?? "")}`} alt="" className="aspect-video w-full rounded object-cover" loading="lazy" />
-                <p className="font-mono text-[11px] break-all text-white/50">{img.path} · {Math.round(img.size / 1024)} KB</p>
+                <p className="font-mono text-xs break-all text-white/50">{img.path} · {Math.round(img.size / 1024)} KB</p>
                 <p className="text-xs text-white/70">
                   {report ? <>Used by <Link href={`/media/${report.id}`} className="text-[#e9c46a] hover:underline">{report.subject}</Link></> : "Not used by any report"}
                 </p>

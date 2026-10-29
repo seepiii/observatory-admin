@@ -48,7 +48,7 @@ export default function RowForm({
         }
         return (
           <label key={f.name} className={`flex flex-col gap-1 ${wide}`}>
-            <span className="font-mono text-[11px] tracking-[0.15em] text-white/50 uppercase">
+            <span className="font-mono text-xs tracking-[0.15em] text-white/50 uppercase">
               {f.label}
               {f.required && " *"}
             </span>
